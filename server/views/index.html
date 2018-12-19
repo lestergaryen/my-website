@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My First Website</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, shrink-to-fit = no" />
+    <link href="/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="/episodes">Episodes</a>
+            <a href="/updates">Updates</a>
+            <a href="/comment">Comment</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="banner">
+            <h1 class="ml15">
+                <div class="word">how i met</div>
+                <br>
+                <div class="word">your mother</div>
+            </h1>
+              
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        </div>
+    </header>
+    <br>
+    <main>
+        <div class="flex">
+
+            <div class="card">
+                <h3>Barney Stinson</h3>
+                <div>
+                    <img src="/images/barney.jpeg" id="barney" onmouseover="barney()" onmouseout="back()" />
+                </div>
+                <div>
+                    <p class="container">Barnabas "Barney" Stinson is a fictional character portrayed by Neil Patrick
+                        Harris and created by Carter Bays and Craig Thomas for the CBS television series How I Met Your
+                        Mother. One of the main characters, Barney is a womanizer who uses many 'plays' in his
+                        'playbook' to help him have sex with women.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Ted Mosby</h3>
+                <div>
+                    <img src="/images/ted.jpg" id="ted" onmouseover="ted()" onmouseout="back()" />
+                </div>
+                <div>
+                    <p class="container">Theodore Evelyn Mosby is a fictional character and the main protagonist in the
+                        U.S. television sitcom How I Met Your Mother, portrayed by Josh Radnor. Ted also serves as the
+                        show's narrator from the future, voiced by Bob Saget, as he tells his children the "long
+                        version" of how he met their mother.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Robin Scherbatsky</h3>
+                <div>
+                    <img src="/images/robin.jpg" id="robin" onmouseover="robin()" onmouseout="back()" />
+                </div>
+                <div>
+                    <p class="container">Robin Charles Scherbatsky Jr. is a fictional character created by Carter Bays
+                        and Craig Thomas for the CBS television series How I Met Your Mother, portrayed by actress
+                        Cobie Smulders. Robin is the on-again, off-again love interest of Barney Stinson (Neil Patrick
+                        Harris) and Ted Mosby (Josh Radnor).</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Lily Aldrin</h3>
+                <div>
+                    <img src="/images/lily.jpg" id="lily" onmouseover="lily()" onmouseout="back()" />
+                </div>
+                <div>
+                    <p class="container">Lily Aldrin is a fictional character in the CBS television series How I Met
+                        Your Mother. Lily is portrayed by American actress Alyson Hannigan. She is the wife of Marshall
+                        Eriksen and the best friend of Ted Mosby, Robin Scherbatsky and Barney Stinson. Lily is a
+                        kindergarten teacher and an amateur painter.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Marshall Ericksen</h3>
+                <div>
+                    <img src="/images/marshall.jpg" id="marshall" onmouseover="marshall()" onmouseout="back()" />
+                </div>
+                <div>
+                    <p class="container">Marshall Eriksen is a fictional character on the CBS sitcom How I Met Your
+                        Mother, portrayed by Jason Segel. Series co-creator Craig Thomas explained that he based
+                        Marshall and Lily on himself and his wife Rebecca. Marshall is a mama's boy and he has many
+                        brothers who always bully him since childhood.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Tracy McConnell</h3>
+                <div>
+                    <img src="/images/tracy.jpg" id="tracy" onmouseover="tracy()" onmouseout="back()" />
+                </div>
+                <div>
+                    <p class="container">Tracy McConnell ("The Mother") is the title character from the CBS television
+                        sitcom How I Met Your Mother. The show, narrated by Future Ted (Bob Saget), tells the story of
+                        how Ted Mosby (Josh Radnor) met The Mother. Tracy McConnell appears in eight episodes, from
+                        "Lucky Penny" to "The Time Travelers".</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Gary Blauman</h3>
+                <div>
+                    <img src="/images/gary.jpg" id="gary" onmouseover="gary()" onmouseout="back()" />
+                </div>
+                <div>
+                    <p class="container">Gary Blauman worked at AltruCell Corporation before it merged with GNB, also
+                        in the legal department. He worked closely with Marshall during the time of Marshall's
+                        internship at AltruCell. (Life Among the Gorillas) Back when Marshall was still working for
+                        Nicholson, Hewitt & West, Barney told a story about Blauman.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Stella Zinman</h3>
+                <div>
+                    <img src="/images/stella.jpg" id="stella" onmouseover="stella()" onmouseout="back()" />
+                </div>
+                <div>
+                    <p class="container">Dr. Stella Zinman is Ted Mosby's romantic interest in half of Season 3. She
+                        gets engaged in the premiere of Season 4, but leaves him just before the wedding (Shelter
+                        Island) for her ex-boyfriend, father of her child and instructor Tony Grafanello. It's possible
+                        her last name is named after the writer, Matthew Zinman.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="footer">&copy; 2018. All rights reserved.</p>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function barney() {
+            document.getElementById("barney").src = "/images/barney.gif";
+        }
+
+        function ted() {
+            document.getElementById("ted").src = "/images/ted.gif";
+        }
+
+        function robin() {
+            document.getElementById("robin").src = "/images/robin.gif";
+        }
+
+        function lily() {
+            document.getElementById("lily").src = "images/lily.gif";
+        }
+
+        function marshall() {
+            document.getElementById("marshall").src = "/images/marshall.gif";
+        }
+
+        function tracy() {
+            document.getElementById("tracy").src = "/images/tracy.gif";
+        }
+
+        function gary() {
+            document.getElementById("gary").src = "/images/gary.gif";
+        }
+
+        function stella() {
+            document.getElementById("stella").src = "/images/stella.gif";
+        }
+
+        function back() {
+            document.getElementById("barney").src = "/images/barney.jpeg";
+            document.getElementById("ted").src = "/images/ted.jpg";
+            document.getElementById("robin").src = "/images/robin.jpg";
+            document.getElementById("lily").src = "/images/lily.jpg";
+            document.getElementById("marshall").src = "/images/marshall.jpg";
+            document.getElementById("tracy").src = "/images/tracy.jpg";
+            document.getElementById("gary").src = "/images/gary.jpg";
+            document.getElementById("stella").src = "/images/stella.jpg";
+        }
+
+        anime.timeline({loop: true})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: function(el, i) {
+      return 800 * i;
+    }
+  }).add({
+    targets: '.ml15',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+    </script>
+</body>
+
+</html>
